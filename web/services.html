@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+    <div class="admin-wrapper">
+
+        <div class="main-header-wrapper">
+            <div class="header-logo">
+                <h1>Inventory</h1>
+            </div>
+
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="header-search-bar">
+                <input type="text" placeholder="search" name="search">
+            </div>
+
+            <div class="header-right-content">
+                <div class="notification">
+                    <span class="notication-icon">
+                        <i class="fa fa-bell"></i>
+                        <span class="notication-count">10</span>
+                    </span>
+                    
+                    <div class="dropdown-content">
+                        <ul class="dropdown">
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user-avatar">
+                    <img src="../img/login-avatar.webp" alt="user">
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">
+                            Username
+                        </div>
+                        <a href="#">Account settings</a>
+                        <a href="#">Sign out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar"> 
+            <div class="sidebar-item sidebar-selected">
+                <a href="dashboard.html">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#">
+                    <span>Sales</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">All Sales</a>
+                    <a href="invoices.html">Invoices</a>
+                    <a href="customers.html">Customers</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#">
+                    <span>Expenses</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Expenses</a>
+                    <a href="invoices.html">Suppliers</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#">
+                    <span>Reports</span>
+                </a> 
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#" class="sidebar-item-tooltip">
+                    <span>HR</span>
+                    <span class="sidebar-item-tooltiptext">Human Resources</span>
+                </a> 
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Employees</a>
+                    <a href="invoices.html">Contractors</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#">
+                    <span>Book Keeping</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Receipts</a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="main-content-header">
+                <div class="heading">
+                    <h1>Services</h1>
+                </div>
+
+                <div class="actions">
+                    <a href="product.html">New</a>
+                    <a href="#">Report</a>
+                </div>
+            </div>
+
+            <div class="main-content-body">
+
+                <div class="sales-table-container card">
+                    <div class="card-body">
+                        <table class="sales-table admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Type</th>
+                                    <th>Active</th>
+                                    <th>Cost</th> 
+                                    <th>Row Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Project Management</td>
+                                    <td>Statement of work definition</td>
+                                    <td>Contract</td>
+                                    <td>Yes</td>
+                                    <td>$20/hr</td> 
+                                    <td>Send Reminder</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Project Management</td>
+                                    <td>Statement of work definition</td>
+                                    <td>Contract</td>
+                                    <td>Yes</td>
+                                    <td>$20/hr</td> 
+                                    <td>Send Reminder</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Project Management</td>
+                                    <td>Statement of work definition</td>
+                                    <td>Contract</td>
+                                    <td>Yes</td>
+                                    <td>$20/hr</td> 
+                                    <td>Send Reminder</td>
+                                </tr>
+                            </tbody> 
+                        </table>
+
+                        <div class="table-info-section">
+                            <div class="table-info">
+                                Showing 1 to 10 of 20 entries
+                            </div>
+                            <div class="pagination">
+                                <a href="#">Previous</a>
+                                <a href="#">1</a>
+                                <a class="active" href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

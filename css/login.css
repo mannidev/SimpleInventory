@@ -1,0 +1,30 @@
+.login-wrapper {
+    width: 20rem;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-wrapper h1 {
+    text-align: center; 
+}
+
+.login-wrapper .login-img img {
+    border-radius: 50%;
+    display: block;
+    width: 40%;
+    margin: 3rem auto;
+}
+
+.login-form{
+    width: 100%;
+}
+
+.login-btn {
+    margin: 3rem 0;
+}
+
+
+

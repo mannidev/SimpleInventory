@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/register.js"></script>
+</head>
+<body>
+    <div class="register-wrapper">
+
+        <form action="#" method="POST">
+
+            <h1>Register</h1>
+
+            <div class="register-form form-input">
+                <label for="username" class="hide-label">Username</label>
+                <input type="text" class="input-spacing" placeholder="Username" name="username" required>
+
+                <label for="email" class="hide-label">Email</label>
+                <input type="email" class="input-spacing" placeholder="Email" name="email" required>
+
+                <label for="password" class="hide-label">Password</label>
+                <input type="password" class="input-spacing" placeholder="Password" name="password" required>
+
+                <label for="confirm" class="hide-label">Confirm</label>
+                <input type="password" class="input-spacing" placeholder="Confirm" name="confirm" required>
+            </div>
+
+            <div class="form-p from-p-full"> 
+                <p>
+                    <input type="checkbox" name="terms" required>
+                    I accept all <a href="registeration.html">Terms & Privacy.</a>
+                </p>
+            </div>
+
+            <div class="register-btn btn-lg">
+                <button type="submit">Register</button>
+            </div>
+
+            <div class="form-p"> 
+                <p>Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
