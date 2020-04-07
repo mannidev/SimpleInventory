@@ -7,6 +7,7 @@
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/admin.css">
 </head>
 
@@ -134,64 +135,107 @@
         <div class="main-content-wrapper">
             <div class="main-content-header">
                 <div class="heading">
-                    <h1>Services</h1>
+                    <h1>Invoice</h1>
                 </div>
 
-                <div class="actions">
-                    <a href="service.html">New</a>
-                    <a href="#">Report</a>
+                <div class="actions"> 
+                    <a href="#">Email</a>
+                    <a href="#">Print</a>
                 </div>
             </div>
 
-            <div class="main-content-body">
+            <div class="main-content-body sales">
 
-                <div class="sales-table-container card">
+                <div class="card">
+                   <div class="card-body sales-header">
+                        <div class="left-container">
+                            <div class="input-group form-input">
+                                <label for="customer" class="hide-label">Customer</label>
+                                <input type="text" class="input-spacing" name="customer" placeholder="Customer">
+                            </div>
+
+                            <div class="input-group form-input">
+                                <label for="email" class="hide-label">Email</label>
+                                <input type="email" class="input-spacing" name="email" placeholder="Email">
+                            </div>
+
+                            <div class="input-group form-input">
+                                <label for="billingAddress" class="hide-label">Billing Address</label>
+                                <input type="text" class="input-spacing" name="billingAddress" placeholder="Billing Address">
+                            </div>
+                            
+                        </div>
+
+                        <div class="right-container"> 
+                            <div>
+                                <h4>Amount Due: $0.00</h4> 
+                            </div> 
+
+                            <div class="input-group form-input">
+                                <label for="paymentDate" class="hide-label">Payment Date</label>
+                                <input type="text" class="input-spacing" name="paymentDate" placeholder="Payment Date">
+                            </div>
+
+                            <div class="input-group form-input">
+                                <label for="paymentDate" class="hide-label">Payment Date</label>
+                                <input type="text" class="input-spacing" name="paymentDate" placeholder="Payment Date">
+                            </div>
+                        </div>
+                   </div>
+                </div>
+
+                <div class="sales-table-container card"> 
                     <div class="card-body">
                         <table class="sales-table admin-table">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
+                                    <th>Product/Service</th>
                                     <th>Description</th>
-                                    <th>Type</th>
-                                    <th>Active</th>
-                                    <th>Cost</th> 
-                                    <th>Row Action</th>
+                                    <th>Quantity</th>
+                                    <th>Rate</th> 
+                                    <th>Tax</th> 
+                                    <th>Amount</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
 
                             <tbody>
                                 <tr>
-                                    <td>Project Management</td>
-                                    <td>Statement of work definition</td>
-                                    <td>Contract</td>
-                                    <td>Yes</td>
-                                    <td>$20/hr</td> 
-                                    <td>Send Reminder</td>
+                                    <td>2020-03-27</td>
+                                    <td>Cash Sale</td>
+                                    <td>20</td>
+                                    <td>Jack and Jill</td>
+                                    <td>2020-03-27</td>
+                                    <td>$2000.00</td> 
+                                    <td>Remove</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Project Management</td>
-                                    <td>Statement of work definition</td>
-                                    <td>Contract</td>
-                                    <td>Yes</td>
-                                    <td>$20/hr</td> 
-                                    <td>Send Reminder</td>
+                                    <td>2020-03-27</td>
+                                    <td>Cash Sale</td>
+                                    <td>100</td>
+                                    <td>Alibaba</td>
+                                    <td>2020-03-27</td>
+                                    <td>$2000.00</td> 
+                                    <td>Remove</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Project Management</td>
-                                    <td>Statement of work definition</td>
-                                    <td>Contract</td>
-                                    <td>Yes</td>
-                                    <td>$20/hr</td> 
-                                    <td>Send Reminder</td>
+                                    <td>2020-03-27</td>
+                                    <td>Cash Sale</td>
+                                    <td>1000</td>
+                                    <td>Dangote</td>
+                                    <td>2020-03-27</td>
+                                    <td>0.00</td> 
+                                    <td>Remove</td>
                                 </tr>
                             </tbody> 
                         </table>
 
-                        <div class="table-info-section">
+                        <div class="table-info-section table-actions-section">
                             <div class="table-info">
-                                Showing 1 to 10 of 20 entries
+                                <button class="btn form-btn">Add Rows</button>
+                                <button class="btn form-btn">Clear All rows</button> 
                             </div>
                             <div class="pagination">
                                 <a href="#">Previous</a>
@@ -201,10 +245,39 @@
                                 <a href="#">4</a>
                                 <a href="#">Next</a>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
 
+                <div class="card"> 
+                        <div class="card-body sales-footer">
+                            <div class="payement-info"> 
+                                 
+                            </div>
+  
+                            <div class="sales-total">
+                                <p>
+                                    <span class="label">Subtotal</span>
+                                    <span class="value">0.00</span>
+                                </p>
+                                <p>
+                                    <span class="label">Discount</span>
+                                    <span class="value">
+                                        <input type="text">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="label">Tax</span>
+                                    <span class="value"><input type="text"></span>
+                                </p>
+                                <p>
+                                    <span class="label">Total</span>
+                                    <span class="value">0.00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -336,7 +336,6 @@ ul {
 }
 
 
-
 /* card */
 .card {
     box-shadow: 
@@ -472,6 +471,14 @@ textarea.form-textarea {
     text-align: right;
 }
 
+.sales-header .right-container div:first-child {
+    margin-bottom: 55px;
+}
+
+.right-container div:first-child {
+    margin-bottom: 30px;
+}
+
 /* form button*/
 .form-btn {
     background-color: #fff;
@@ -529,6 +536,23 @@ textarea.form-textarea {
     color: #999;
     background-color: #fff;
     border-bottom: 1px solid #02abda;
+}
+
+.sales-footer .payement-info {
+    width: 300px;
+    padding-left: 30px;
+}
+
+.sales-footer .payement-info .card-header {
+    margin-bottom: 20px;
+}
+
+.sales-footer .balance div:last-child{
+    margin-top: 30%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: limegreen;
 }
 
 

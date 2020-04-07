@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+    <div class="admin-wrapper">
+
+        <div class="main-header-wrapper">
+            <div class="header-logo">
+                <h1>Inventory</h1>
+            </div>
+
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="header-search-bar">
+                <input type="text" placeholder="search" name="search">
+            </div>
+
+            <div class="header-right-content">
+                <div class="notification">
+                    <span class="notication-icon">
+                        <i class="fa fa-bell"></i>
+                        <span class="notication-count">10</span>
+                    </span>
+                    
+                    <div class="dropdown-content">
+                        <ul class="dropdown">
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user-avatar">
+                    <img src="../img/login-avatar.webp" alt="user">
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">
+                            Username
+                        </div>
+                        <a href="#">Account settings</a>
+                        <a href="#">Sign out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar"> 
+            <div class="sidebar-item">
+                <a href="dashboard.html">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav sidebar-selected">
+                <a href="sales.html">
+                    <span>Sales</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">All Sales</a>
+                    <a href="invoices.html">Invoices</a>
+                    <a href="customers.html">Customers</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#">
+                    <span>Expenses</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Expenses</a>
+                    <a href="invoices.html">Suppliers</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#">
+                    <span>Reports</span>
+                </a> 
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#" class="sidebar-item-tooltip">
+                    <span>HR</span>
+                    <span class="sidebar-item-tooltiptext">Human Resources</span>
+                </a> 
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Employees</a>
+                    <a href="invoices.html">Contractors</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#">
+                    <span>Book Keeping</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Receipts</a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="main-content-header">
+                <div class="heading">
+                    <h1>New Service</h1>
+                </div>
+
+                <div class="actions"> 
+                </div>
+            </div>
+
+            <div class="main-content-body">
+
+                <form action="#">
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Basic Information</h1>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="name" class="hide-label">Service Name</label>
+                                    <input type="text" class="input-spacing" name="name" placeholder="Name">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="category" class="hide-label">Type</label>
+                                    <input type="text" class="input-spacing" name="category" placeholder="Category">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="sku" class="hide-label">Category</label>
+                                    <input type="number" class="input-spacing" name="sku" placeholder="SKU">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Sales Information</h1>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="salesDescription" class="hide-label">Sales Description</label>
+                                    <input type="text" class="input-spacing" name="salesDescription" placeholder="Sales Description">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="salePrice" class="hide-label">Sales Price</label>
+                                    <input type="text" class="input-spacing" name="salePrice" placeholder="Sales Price">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="salesTax" class="hide-label">Sales Tax</label>
+                                    <input type="text" class="input-spacing" name="salesTax" placeholder="Sales Tax">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Purchasing Information</h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="cost" class="hide-label">Cost Associated Wirh Service</label>
+                                    <input type="text" class="input-spacing" name="cost" placeholder="Cost Associated With Service">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="vendor" class="hide-label">Vendor</label>
+                                    <input type="number" class="input-spacing" name="vendor" placeholder="Vendor">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="purchaseDescription" class="hide-label">Puchasing Description</label>
+                                    <input type="text" class="input-spacing" name="purchaseDescription" placeholder="Puchasing Description">
+                                </div>
+                                
+                            </div> 
+                        </div> 
+                    </div>
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Miscellaneous Information</h1>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="serviceDescription" class="hide-label">Service Description</label>
+                                    <input type="text" class="input-spacing" name="serviceDescription" placeholder="Service Description">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Notes</h1>
+                            </div> 
+                        </div> 
+                    </div>
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>
+                                    Attachments
+                                </h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="form-attachements">
+                                    <a href="#">Add Attachments</a>   
+                                </div>                      
+                            </div> 
+                        </div> 
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

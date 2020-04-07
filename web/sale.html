@@ -135,7 +135,7 @@
         <div class="main-content-wrapper">
             <div class="main-content-header">
                 <div class="heading">
-                    <h1>Invoice</h1>
+                    <h1>Receive Payment</h1>
                 </div>
 
                 <div class="actions"> 
@@ -166,13 +166,12 @@
 
                         <div class="right-container"> 
                             <div>
-                                <h4>Amount Due</h4>
-                                <h2>$0.00</h2>
+                                <h3>Amount Due: <span>$0.00</span></h3> 
                             </div> 
 
                             <div class="input-group form-input">
-                                <label for="dueDate" class="hide-label">Due Date</label>
-                                <input type="text" class="input-spacing" name="dueDate" placeholder="Due Date">
+                                <label for="paymentDate" class="hide-label">Payment Date</label>
+                                <input type="text" class="input-spacing" name="paymentDate" placeholder="Payment Date">
                             </div>
                         </div>
                    </div>
@@ -226,37 +225,72 @@
                             </tbody> 
                         </table>
 
-                        <div class="table-actions-section">
-                            <div>
+                        <div class="table-info-section table-actions-section">
+                            <div class="table-info">
                                 <button class="btn form-btn">Add Rows</button>
                                 <button class="btn form-btn">Clear All rows</button>
+                                <button class="btn form-btn">Use Invoice</button>
                             </div>
-                        </div>
+                            <div class="pagination">
+                                <a href="#">Previous</a>
+                                <a href="#">1</a>
+                                <a class="active" href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">Next</a>
+                            </div>
+                        </div> 
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-body sales-footer">
-                        <div class="left"></div>
-                        <div class="right sales-total">
-                            <p>
-                                <span class="label">Subtotal</span>
-                                <span class="value">0.00</span>
-                            </p>
-                            <p>
-                                <span class="label">Discount</span>
-                                <span class="value">
-                                    <input type="text">
-                                </span>
-                            </p>
-                            <p>
-                                <span class="label">Tax</span>
-                                <span class="value"><input type="text"></span>
-                            </p>
-                            <p>
-                                <span class="label">Total</span>
-                                <span class="value">0.00</span>
-                            </p>
+                <div class="card"> 
+                        <div class="card-body sales-footer">
+                            <div class="payement-info"> 
+                                <div class="card-header">
+                                    <h1>Payment Information</h1>
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="paymentMethod" class="hide-label">Payment Method</label>
+                                    <input type="text" class="input-spacing" name="paymentMethod" placeholder="Payment Method">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="dueDate" class="hide-label">Amount Received</label>
+                                    <input type="number" class="input-spacing" name="dueDate" placeholder="Amount Received">
+                                </div>
+                            </div>
+
+                            <div class="balance">
+                                <div class="card-header">
+                                    <h1>Balance Due</h1> 
+                                </div>
+
+                                <div>
+                                    $30.00
+                                </div>
+                            </div>
+
+                            <div class="sales-total">
+                                <p>
+                                    <span class="label">Subtotal</span>
+                                    <span class="value">0.00</span>
+                                </p>
+                                <p>
+                                    <span class="label">Discount</span>
+                                    <span class="value">
+                                        <input type="text">
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="label">Tax</span>
+                                    <span class="value"><input type="text"></span>
+                                </p>
+                                <p>
+                                    <span class="label">Total</span>
+                                    <span class="value">0.00</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

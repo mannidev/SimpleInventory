@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+    <div class="admin-wrapper">
+
+        <div class="main-header-wrapper">
+            <div class="header-logo">
+                <h1>Inventory</h1>
+            </div>
+
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="header-search-bar">
+                <input type="text" placeholder="search" name="search">
+            </div>
+
+            <div class="header-right-content">
+                <div class="notification">
+                    <span class="notication-icon">
+                        <i class="fa fa-bell"></i>
+                        <span class="notication-count">10</span>
+                    </span>
+                    
+                    <div class="dropdown-content">
+                        <ul class="dropdown">
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                            <li class="dropdown-item">
+                                <span></span>
+                                <span>item1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user-avatar">
+                    <img src="../img/login-avatar.webp" alt="user">
+                    <div class="dropdown-content">
+                        <div class="dropdown-header">
+                            Username
+                        </div>
+                        <a href="#">Account settings</a>
+                        <a href="#">Sign out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar"> 
+            <div class="sidebar-item">
+                <a href="dashboard.html">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav sidebar-selected">
+                <a href="#">
+                    <span>Sales</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">All Sales</a>
+                    <a href="invoices.html">Invoices</a>
+                    <a href="customers.html">Customers</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#">
+                    <span>Expenses</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Expenses</a>
+                    <a href="invoices.html">Suppliers</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item">
+                <a href="#">
+                    <span>Reports</span>
+                </a> 
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#" class="sidebar-item-tooltip">
+                    <span>HR</span>
+                    <span class="sidebar-item-tooltiptext">Human Resources</span>
+                </a> 
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Employees</a>
+                    <a href="invoices.html">Contractors</a>
+                </div>
+            </div>
+
+            <div class="sidebar-item sidebar-subnav">
+                <a href="#">
+                    <span>Book Keeping</span>
+                </a>
+
+                <div class="sidebar-subnav-content">
+                    <a href="sales.html">Receipts</a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="main-content-header">
+                <div class="heading">
+                    <h1>New Employee</h1>
+                </div>
+
+                <div class="actions"> 
+                </div>
+            </div>
+
+            <div class="main-content-body">
+
+                <form action="#">
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Basic Information</h1>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="title" class="hide-label">Title</label>
+                                    <input type="text" class="input-spacing" name="title" placeholder="Title">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="firstname" class="hide-label">First Name</label>
+                                    <input type="text" class="input-spacing" name="firstname" placeholder="First Name">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="middlename" class="hide-label">Middle Name</label>
+                                    <input type="text" class="input-spacing" name="middlename" placeholder="Middle Name">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="lastname" class="hide-label">Last Name</label>
+                                    <input type="text" class="input-spacing" name="lastname" placeholder="Last Name">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="suffix" class="hide-label">Suffix</label>
+                                    <input type="text" class="input-spacing" name="suffix" placeholder="Suffix">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Address</h1>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="street" class="hide-label">Street</label>
+                                    <input type="text" class="input-spacing" name="street" placeholder="Street">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="city" class="hide-label">City</label>
+                                    <input type="text" class="input-spacing" name="city" placeholder="City">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="state" class="hide-label">State / Province</label>
+                                    <input type="text" class="input-spacing" name="state" placeholder="State / Province">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="zipcode" class="hide-label">Zip Code</label>
+                                    <input type="text" class="input-spacing" name="zipcode" placeholder="Zip Code">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="country" class="hide-label">Country</label>
+                                    <input type="text" class="input-spacing" name="country" placeholder="Country">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Contact Information</h1>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="email" class="hide-label">Email</label>
+                                    <input type="email" class="input-spacing" name="email" placeholder="Email">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="phone" class="hide-label">Phone</label>
+                                    <input type="tel" class="input-spacing" name="phone" placeholder="Phone">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="mobile" class="hide-label">Mobile</label>
+                                    <input type="tel" class="input-spacing" name="mobile" placeholder="Mobile">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="fax" class="hide-label">Fax</label>
+                                    <input type="tel" class="input-spacing" name="fax" placeholder="Fax">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>
+                                    Additional Information
+                                </h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="employmentId" class="hide-label">Employee Id</label>
+                                    <input type="text" class="input-spacing" name="employmentId" placeholder="Employee Id">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="employmentType" class="hide-label">Employment Type</label>
+                                    <input type="text" class="input-spacing" name="employmentType" placeholder="Employment Type">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="sex" class="hide-label">Sex</label>
+                                    <input type="text" class="input-spacing" name="sex" placeholder="Sex">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="birthDate" class="hide-label">Date of Birth</label>
+                                    <input type="number" class="input-spacing" name="birthDate" placeholder="Date of Birth">
+                                </div>                                
+                            </div> 
+                        </div> 
+                    </div>
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>
+                                    Payment and Billing
+                                </h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="costRate" class="hide-label">Cost Rate</label>
+                                    <input type="text" class="input-spacing" name="costRate" placeholder="Cost Rate">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="billingRate" class="hide-label">Billing Rate</label>
+                                    <input type="text" class="input-spacing" name="billingRate" placeholder="Billing Rate">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="employmentDate" class="hide-label">Employment Date</label>
+                                    <input type="number" class="input-spacing" name="employmentDate" placeholder="Employment Date">
+                                </div>                                
+                            </div> 
+                        </div> 
+                    </div>
+
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>
+                                    Attachments
+                                </h1>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="form-attachements">
+                                    <a href="#">Add Attachments</a>   
+                                </div>                      
+                            </div> 
+                        </div> 
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>
