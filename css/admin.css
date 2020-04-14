@@ -91,12 +91,12 @@ ul {
     margin-right: auto; 
 }
 
-.notification .notication-icon {
+.notification .notification-icon {
     font-size: 1.2rem;
     position: relative;
 }
 
-.notication-icon .notication-count {
+.notification-icon .notification-count {
     position: absolute;
     font-size: .5em;
     color: white;

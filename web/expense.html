@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/admin.css">
 </head>
@@ -73,13 +73,13 @@
         </div>
 
         <div class="sidebar"> 
-            <div class="sidebar-item sidebar-selected">
+            <div class="sidebar-item">
                 <a href="dashboard.html">
                     <span>Dashboard</span>
                 </a>
             </div>
 
-            <div class="sidebar-item sidebar-subnav">
+            <div class="sidebar-item sidebar-subnav sidebar-selected">
                 <a href="sales.html">
                     <span>Sales</span>
                 </a>
@@ -135,59 +135,103 @@
         <div class="main-content-wrapper">
             <div class="main-content-header">
                 <div class="heading">
-                    <h1>Receive Payment</h1>
+                    <h1>New Expense</h1>
                 </div>
 
                 <div class="actions"> 
                 </div>
             </div>
 
-            <div class="main-content-body sales">
+            <div class="main-content-body">
 
-                <div class="card">
-                   <div class="card-body sales-header">
-                        <div class="left-container">
-                            <div class="input-group form-input">
-                                <label for="customer" class="hide-label">Customer</label>
-                                <input type="text" class="input-spacing" name="customer" placeholder="Customer">
-                            </div>
+                <form action="#">
 
-                            <div class="input-group form-input">
-                                <label for="email" class="hide-label">Email</label>
-                                <input type="email" class="input-spacing" name="email" placeholder="Email">
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Basic Information</h1>
                             </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="name" class="hide-label">Des</label>
+                                    <input type="text" class="input-spacing" name="name" placeholder="Name">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="category" class="hide-label">Type</label>
+                                    <input type="text" class="input-spacing" name="category" placeholder="Category">
+                                </div>
 
-                            <div class="input-group form-input">
-                                <label for="billingAddress" class="hide-label">Billing Address</label>
-                                <input type="text" class="input-spacing" name="billingAddress" placeholder="Billing Address">
+                                <div class="input-group form-input">
+                                    <label for="description" class="hide-label">Description</label>
+                                    <input type="number" class="input-spacing" name="description" placeholder="Description">
+                                </div> 
                             </div>
-                            
                         </div>
+                    </div>
+ 
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Payment Information</h1>
+                            </div>
+    
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="paidTo" class="hide-label">Paid To</label>
+                                    <input type="text" class="input-spacing" name="paidTo" placeholder="Paid To">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="paymentDate" class="hide-label">Payment Date</label>
+                                    <input type="text" class="input-spacing" name="paymentDate" placeholder="Payment Date">
+                                </div>
+    
+                                <div class="input-group form-input">
+                                    <label for="paymentMethod" class="hide-label">Payment Method</label>
+                                    <input type="text" class="input-spacing" name="paymentMethod" placeholder="Payment Method">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="card form-card-md">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h1>Expense Information</h1>
+                            </div>
 
-                        <div class="right-container"> 
-                            <div>
-                                <h3>Amount Due: <span>$0.00</span></h3> 
+                            <div class="card-body">
+                                <div class="input-group form-input">
+                                    <label for="expenseDate" class="hide-label">Expense Date</label>
+                                    <input type="text" class="input-spacing" name="expenseDate" placeholder="Expense Date">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="expenseStatus" class="hide-label">Expense Status</label>
+                                    <input type="number" class="input-spacing" name="expenseStatus" placeholder="Expense Status">
+                                </div>
+
+                                <div class="input-group form-input">
+                                    <label for="expenseAmount" class="hide-label">Expense Amount</label>
+                                    <input type="text" class="input-spacing" name="expenseAmount" placeholder="Expense Amount">
+                                </div>
+                                
                             </div> 
-
-                            <div class="input-group form-input">
-                                <label for="paymentDate" class="hide-label">Payment Date</label>
-                                <input type="text" class="input-spacing" name="paymentDate" placeholder="Payment Date">
-                            </div>
-                        </div>
-                   </div>
-                </div>
+                        </div> 
+                    </div> 
+                </form>
 
                 <div class="sales-table-container card"> 
                     <div class="card-body">
                         <table class="sales-table admin-table">
                             <thead>
                                 <tr>
-                                    <th>Product/Service</th>
+                                    <th>Date</th>
                                     <th>Description</th>
-                                    <th>Quantity</th>
-                                    <th>Rate</th> 
-                                    <th>Tax</th> 
-                                    <th>Amount</th>
+                                    <th>Amount</th> 
+                                    <th>Tax</th>  
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -195,30 +239,24 @@
                             <tbody>
                                 <tr>
                                     <td>2020-03-27</td>
-                                    <td>Cash Sale</td>
-                                    <td>20</td>
-                                    <td>Jack and Jill</td>
-                                    <td>2020-03-27</td>
-                                    <td>$2000.00</td> 
+                                    <td>Water Bill</td>
+                                    <td>$3000</td> 
+                                    <td>0.00</td> 
                                     <td>Remove</td>
                                 </tr>
 
                                 <tr>
                                     <td>2020-03-27</td>
-                                    <td>Cash Sale</td>
-                                    <td>100</td>
-                                    <td>Alibaba</td>
-                                    <td>2020-03-27</td>
-                                    <td>$2000.00</td> 
+                                    <td>Water Bill</td>
+                                    <td>$3000</td> 
+                                    <td>0.00</td> 
                                     <td>Remove</td>
                                 </tr>
 
                                 <tr>
                                     <td>2020-03-27</td>
-                                    <td>Cash Sale</td>
-                                    <td>1000</td>
-                                    <td>Dangote</td>
-                                    <td>2020-03-27</td>
+                                    <td>Water Bill</td>
+                                    <td>$3000</td> 
                                     <td>0.00</td> 
                                     <td>Remove</td>
                                 </tr>
@@ -228,8 +266,7 @@
                         <div class="table-info-section table-actions-section">
                             <div class="table-info">
                                 <button class="btn form-btn">Add Rows</button>
-                                <button class="btn form-btn">Clear All rows</button>
-                                <button class="btn form-btn">Use Invoice</button>
+                                <button class="btn form-btn">Clear All rows</button> 
                             </div>
                             <div class="pagination">
                                 <a href="#">Previous</a>
@@ -246,31 +283,9 @@
                 <div class="card"> 
                         <div class="card-body sales-footer">
                             <div class="payement-info"> 
-                                <div class="card-header">
-                                    <h1>Payment Information</h1>
-                                </div>
-
-                                <div class="input-group form-input">
-                                    <label for="paymentMethod" class="hide-label">Payment Method</label>
-                                    <input type="text" class="input-spacing" name="paymentMethod" placeholder="Payment Method">
-                                </div>
-
-                                <div class="input-group form-input">
-                                    <label for="dueDate" class="hide-label">Amount Received</label>
-                                    <input type="number" class="input-spacing" name="dueDate" placeholder="Amount Received">
-                                </div>
+                                 
                             </div>
-
-                            <div class="balance">
-                                <div class="card-header">
-                                    <h1>Balance Due</h1> 
-                                </div>
-
-                                <div>
-                                    $30.00
-                                </div>
-                            </div>
-
+  
                             <div class="sales-total">
                                 <p>
                                     <span class="label">Subtotal</span>
@@ -294,6 +309,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
