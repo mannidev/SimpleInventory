@@ -83,6 +83,7 @@ ul {
 }
 
 .notification {
+    position: relative;
     color: #6c859e;
     width: 30px; 
     height: 40px;
@@ -138,6 +139,7 @@ ul {
 
 .notification .dropdown-content {
     top: 100%;
+    right: 0;
 }
 
 .dropdown-content a, 
